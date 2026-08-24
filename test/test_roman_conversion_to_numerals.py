@@ -1,8 +1,6 @@
 import unittest
 
-
-def convert_integer_to_roman_numerals(input_integer):
-    return "I"
+from src.integer_to_roman_numerals_converter import convert_integer_to_roman_numerals
 
 
 class IntegerToRomanNumeralsTest(unittest.TestCase):
