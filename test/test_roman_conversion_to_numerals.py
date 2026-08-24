@@ -1,11 +1,11 @@
 import unittest
 
 
-def convert_numbers_to_roman_numeral(input_number):
+def convert_integer_to_roman_numerals(input_integer):
     return "I"
 
 
-class IntegerToRomanNumeral(unittest.TestCase):
+class IntegerToRomanNumeralsTest(unittest.TestCase):
 
     def test_converting_number_one_to_roman_numeral(self):
-        self.assertEqual(convert_numbers_to_roman_numeral(1), "I")
+        self.assertEqual(convert_integer_to_roman_numerals(1), "I")
