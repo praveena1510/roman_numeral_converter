@@ -1,15 +1,12 @@
 import unittest
 
+from parameterized import parameterized
+
 from src.integer_to_roman_numerals_converter import convert_integer_to_roman_numerals
 
 
 class IntegerToRomanNumeralsTest(unittest.TestCase):
 
-    def test_converting_number_one_to_roman_numeral(self):
-        self.assertEqual(convert_integer_to_roman_numerals(1), "I")
-
-    def test_converting_number_two_to_roman_numeral(self):
-        self.assertEqual(convert_integer_to_roman_numerals(2), "II")
-
-    def test_converting_number_three_to_roman_numerals(self):
-        self.assertEqual(convert_integer_to_roman_numerals(3), "III")
+    @parameterized.expand([(1, "I"), (2, "II"), (3, "III")])
+    def test_converting_integer_to_roman_numerals(self, input_integer: int, expected_roman_numeral: str):
+        self.assertEqual(convert_integer_to_roman_numerals(input_integer), expected_roman_numeral)
