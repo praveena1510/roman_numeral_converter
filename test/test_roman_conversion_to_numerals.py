@@ -9,4 +9,7 @@ class IntegerToRomanNumeralsTest(unittest.TestCase):
         self.assertEqual(convert_integer_to_roman_numerals(1), "I")
 
     def test_converting_number_two_to_roman_numeral(self):
-       self.assertEqual(convert_integer_to_roman_numerals(2),"II")
+        self.assertEqual(convert_integer_to_roman_numerals(2), "II")
+
+    def test_converting_number_three_to_roman_numerals(self):
+        self.assertEqual(convert_integer_to_roman_numerals(3), "III")
