@@ -8,7 +8,7 @@ def convert_integer_to_roman_numerals(input_integer):
 
 
 def concatenate_roman_numeral(input_integer, roman_numerals, value_of_numeral, numeral):
-    if input_integer >= value_of_numeral:
+    while input_integer >= value_of_numeral:
         roman_numerals = roman_numerals + numeral
         input_integer = input_integer - value_of_numeral
     return input_integer, roman_numerals
