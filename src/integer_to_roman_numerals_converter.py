@@ -2,9 +2,7 @@ def convert_integer_to_roman_numerals(input_integer):
     roman_numerals = ""
     input_integer, roman_numerals = concatenate_roman_numeral(input_integer, roman_numerals, 10, "X")
     input_integer, roman_numerals = concatenate_roman_numeral(input_integer, roman_numerals, 9, "IX")
-    if input_integer >= 5:
-        roman_numerals = roman_numerals + "V"
-        input_integer = input_integer - 5
+    input_integer, roman_numerals = concatenate_roman_numeral(input_integer, roman_numerals, 5, "V")
     if input_integer == 4:
         roman_numerals = roman_numerals + "IV"
         input_integer = input_integer - 4
