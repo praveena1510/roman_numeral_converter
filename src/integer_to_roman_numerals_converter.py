@@ -4,7 +4,7 @@ def convert_integer_to_roman_numerals(input_integer):
         roman_numeral = roman_numeral + "X"
         input_integer = input_integer - 10
     if input_integer == 9:
-        return "IX"
+        return roman_numeral + "IX"
     if input_integer >= 5:
         roman_numeral = roman_numeral + "V"
         input_integer = input_integer - 5
