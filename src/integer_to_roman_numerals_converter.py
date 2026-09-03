@@ -1,5 +1,7 @@
 def convert_integer_to_roman_numerals(input_integer):
     str = ""
+    if input_integer == 9:
+        return "IX"
     if input_integer>=5:
        str =  str + "V"
        input_integer= input_integer - 5
