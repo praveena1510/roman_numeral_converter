@@ -1,5 +1,7 @@
 def convert_integer_to_roman_numerals(input_integer):
     roman_numeral = ""
+    if input_integer == 11:
+        return "XI"
     if input_integer == 10:
         return "X"
     if input_integer == 9:

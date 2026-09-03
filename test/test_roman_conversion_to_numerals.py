@@ -16,6 +16,7 @@ class IntegerToRomanNumeralsTest(unittest.TestCase):
         (6, "VI"),
         (9, "IX"),
         (10, "X"),
+        (11, "XI")
        ])
     def test_converting_integer_to_roman_numerals(self, input_integer: int, expected_roman_numeral: str):
         self.assertEqual(convert_integer_to_roman_numerals(input_integer), expected_roman_numeral)
