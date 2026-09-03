@@ -13,9 +13,9 @@ def convert_integer_to_roman_numerals(input_integer):
     return roman_numerals + "I" * input_integer
 
 
-def concatenate_roman_numeral(input_integer, roman_numeral):
+def concatenate_roman_numeral(input_integer, roman_numerals):
     if input_integer >= 10:
-        roman_numeral = roman_numeral + "X"
+        roman_numerals = roman_numerals + "X"
         input_integer = input_integer - 10
-    return input_integer, roman_numeral
+    return input_integer, roman_numerals
 
